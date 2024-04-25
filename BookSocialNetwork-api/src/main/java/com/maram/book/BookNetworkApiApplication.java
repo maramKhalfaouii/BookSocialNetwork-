@@ -8,13 +8,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.scheduling.annotation.EnableAsync;
 
+@SpringBootApplication
+@EnableJpaAuditing
 public class BookNetworkApiApplication {
 
-    @EnableJpaAuditing
-    public class BookNetworkApi {
-        public static void main(String[] args) {
-            SpringApplication.run(BookNetworkApi.class, args);
-        }
-
+    public static void main(String[] args) {
+        SpringApplication.run(BookNetworkApiApplication.class, args);
     }
+
 }
